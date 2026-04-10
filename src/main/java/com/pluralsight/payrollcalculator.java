@@ -9,13 +9,13 @@ public class payrollcalculator {
 
 
         System.out.print("Name: ");
-        String Name = scanner.nextLine();
+        String name = scanner.nextLine();
 
         System.out.print("Hours worked: ");
-        double hourWorked = scanner.nextDouble();
+        double hoursWorked = scanner.nextDouble();
 
         System.out.println("Hourly Rate of Pay:");
-        double rateOfpay = scanner.nextDouble();
+        double payRate = scanner.nextDouble();
 
         double grossPay;
         if (hoursWorked <= 40) {
@@ -30,7 +30,7 @@ public class payrollcalculator {
         }
 
         // 3. Output Result
-        System.out.printf("Employee: %s \n", name);
+        System.out.printf("Employee: %s", name);
         System.out.printf("Your gross pay is: $%.2f", grossPay);
     }
 
@@ -41,5 +41,3 @@ public class payrollcalculator {
 
     }
 
-
-}
