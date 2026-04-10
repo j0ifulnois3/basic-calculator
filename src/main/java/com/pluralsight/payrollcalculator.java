@@ -18,6 +18,21 @@ public class payrollcalculator {
         double rateOfpay = scanner.nextDouble();
 
         double grossPay;
+        if (hoursWorked <= 40) {
+            // Standard pay
+            grossPay = hoursWorked * payRate;
+        } else {
+            // Overtime: 40 hours at normal rate + extra hours at 1.5x rate
+            double regularPay = 40 * payRate;
+            double overtimeHours = hoursWorked - 40;
+            double overtimePay = overtimeHours * (payRate * 1.5);
+            grossPay = regularPay + overtimePay;
+        }
+
+        // 3. Output Result
+        System.out.printf("Employee: %s \n", name);
+        System.out.printf("Your gross pay is: $%.2f", grossPay);
+    }
 
 
 
