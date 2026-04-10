@@ -5,20 +5,28 @@ import java.util.Scanner;
 public class BasicCalculator {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter number 1: ");
-        int num1 = scanner.nextInt();
+
+
+        System.out.print("Enter your first number: ");
+        double firstNumber = scanner.nextDouble();
 
         System.out.print("Enter number 2: ");
-        int num2 = scanner.nextInt();
-        scanner.nextLine(); // "eat" the leftover CRLF
+        double secondNumber = scanner.nextDouble();
+
 
         System.out.println("Possible calculations: ");
-        System.out.print(" (A)dd" );
+        System.out.println(" (A)dd" );
+        System.out.println(" (S)ubtract" );
+        System.out.println(" (M)ultiply" );
+        System.out.println(" (D)ivide" );
+
+        System.out.println("Select calculation.");
+        scanner.nextLine();
 
         String action = scanner.nextLine();
-        System.out.println("Preparing to do math... ");
+        System.out.println("You answer is:  "+ (firstNumber * secondNumber));
+
 
     }
 
