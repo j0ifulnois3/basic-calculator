@@ -9,14 +9,16 @@ public class payrollcalculator {
 
 
         System.out.print("Name: ");
-        String Name = String.valueOf(scanner.nextFloat());
-        scanner.nextLine();
+        String Name = scanner.nextLine();
 
         System.out.print("Hours worked: ");
-        float hourWorked = scanner.nextFloat();
+        double hourWorked = scanner.nextDouble();
 
-        System.out.println("Rate of Pay:");
-        float rateOfpay = scanner.nextFloat();
+        System.out.println("Hourly Rate of Pay:");
+        double rateOfpay = scanner.nextDouble();
+
+        double grossPay;
+
 
 
 
